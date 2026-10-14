@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d18">
+  <meta name="description" content="Spooky Jumpers — a spooky, Gorilla Tag-inspired game in early development.">
+  <title>Spooky Jumpers — Official</title>
+  <style>
+    :root { color-scheme: dark; --bg:#100d18; --panel:#191425; --purple:#a879ff; --pink:#f0a2ff; --muted:#c5bdd4; --line:#342644; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; min-height:100vh; color:#f8f4ff; background: radial-gradient(ellipse at 50% 0%, #38204f 0, transparent 48%), var(--bg); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color:inherit; }
+    .wrap { width:min(100% - 32px, 1020px); margin:0 auto; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:22px 0; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:900; letter-spacing:.04em; }
+    .brand-mark { display:grid; place-items:center; width:38px; height:38px; border:1px solid #674888; border-radius:12px; background:#24172f; font-size:21px; }
+    .top-link { color:var(--muted); text-decoration:none; font-size:.94rem; }
+    .top-link:hover { color:white; }
+    .hero { position:relative; overflow:hidden; text-align:center; padding:76px 22px 66px; border:1px solid var(--line); border-radius:28px; background:linear-gradient(150deg, rgba(37,24,51,.94), rgba(19,15,29,.92)); box-shadow:0 28px 90px #0005; }
+    .hero::before, .hero::after { content:"✦"; position:absolute; color:#cba6ff55; font-size:52px; }
+    .hero::before { top:27px; left:8%; transform:rotate(-15deg); }
+    .hero::after { bottom:30px; right:9%; transform:rotate(18deg); }
+    .eyebrow { display:inline-block; border:1px solid #68488b; border-radius:999px; padding:7px 12px; color:#e2caff; background:#291a39; font-size:.76rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { margin:22px 0 12px; font-size:clamp(2.8rem, 8vw, 5.6rem); line-height:.98; letter-spacing:-.065em; }
+    h1 span { color:var(--purple); text-shadow:0 0 35px #a879ff44; }
+    .intro { max-width:600px; margin:0 auto; color:var(--muted); font-size:clamp(1rem, 2.6vw, 1.15rem); line-height:1.7; }
+    .actions { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:28px; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; gap:9px; min-height:48px; padding:13px 20px; border-radius:14px; text-decoration:none; font-weight:850; border:1px solid transparent; transition:transform .15s ease, filter .15s ease; }
+    .btn:hover { transform:translateY(-2px); filter:brightness(1.08); }
+    .btn-primary { color:#180f21; background:linear-gradient(135deg, #d2adff, #a879ff); box-shadow:0 9px 28px #a879ff28; }
+    .btn-secondary { background:#211a2e; border-color:#48365e; }
+    .sections { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:18px 0; }
+    .card { padding:22px; border:1px solid var(--line); border-radius:20px; background:rgba(25,20,37,.88); }
+    .card .icon { font-size:26px; }
+    h2 { margin:10px 0 7px; font-size:1.05rem; }
+    .card p { margin:0; color:var(--muted); line-height:1.65; font-size:.94rem; }
+    .notice { margin:18px 0 36px; padding:18px 20px; border:1px solid #57416f; border-radius:18px; background:#21172e; color:#d8cbe7; line-height:1.6; }
+    .notice strong { color:#fff; }
+    footer { padding:4px 0 30px; color:#9186a2; text-align:center; font-size:.85rem; }
+    footer a { color:#cdb0ff; }
+    @media (max-width:700px) { .hero { padding:62px 17px 54px; } .sections { grid-template-columns:1fr; } header { padding:17px 0; } .top-link { font-size:.85rem; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">👻</span><span>SPOOKY JUMPERS</span></div>
+      <a class="top-link" href="https://discord.gg/yzynEszCA" target="_blank" rel="noopener noreferrer">Community ↗</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="eyebrow">🌙 Early Development</div>
+        <h1 id="page-title">Dare to<br><span>jump in?</span></h1>
+        <p class="intro">Welcome to Spooky Jumpers, a spooky Gorilla Tag-inspired game currently in early development. Follow along as the project grows.</p>
+        <div class="actions">
+          <!-- IMPORTANT: Replace YOUR-GITHUB-USERNAME with your GitHub username. The release asset must be named SpookyJumpers.apk. -->
+          <a class="btn btn-primary" href="https://github.com/YOUR-GITHUB-USERNAME/spooky-jumpers/releases/latest/download/SpookyJumpers.apk">⬇ Download APK</a>
+          <a class="btn btn-secondary" href="https://discord.gg/yzynEszCA" target="_blank" rel="noopener noreferrer">💬 Join the Discord</a>
+        </div>
+      </section>
+
+      <section class="sections" aria-label="Project information">
+        <article class="card"><div class="icon" aria-hidden="true">🕸️</div><h2>In development</h2><p>Spooky Jumpers is still being built. Things can change, and test builds may have bugs.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">🎮</div><h2>Test builds</h2><p>Only install builds you trust and that were shared by the development team. Check the version before downloading.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">🌑</div><h2>Follow the journey</h2><p>Join the Discord to keep up with community news and development announcements.</p></article>
+      </section>
+
+      <aside class="notice"><strong>Before downloading:</strong> This is an early-development APK, not a finished release. Only install it on a device you’re comfortable using for testing. If the download button doesn’t work yet, finish setting up the release link in the website instructions.</aside>
+    </main>
+
+    <footer>© <span id="year">2026</span> Spooky Jumpers · Early development · <a href="https://discord.gg/yzynEszCA" target="_blank" rel="noopener noreferrer">Discord</a></footer>
+  </div>
+</body>
+</html>
